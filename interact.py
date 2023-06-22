@@ -57,5 +57,5 @@ if user_input:
     
 if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
-        message(st.session_state["generated"][i], key=str(i))
+        message(st.session_state["generated"][i], logo= "https://media.licdn.com/dms/image/C560BAQGG5VG3rcnNMA/company-logo_200_200/0/1568920482000?e=2147483647&v=beta&t=hmeNuvbdLJeC3Rif6X8xc1SFY-gN-Ia5tiRVuSU2vhQ", key=str(i))
         message(st.session_state['past'][i], avatar_style="adventurer", is_user=True, key=str(i) + '_user')
